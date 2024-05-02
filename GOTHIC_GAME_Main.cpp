@@ -15,27 +15,27 @@ int teren();
 
 int main()
 {
-	setlocale(LC_ALL, "polish");													//polskie znaki
-	srand(time(NULL));																//liczby pseudolosowe
-	item stary_m		("Stary Miecz"					, 18, 12 , 0 , 1, 0);		//zbiÛr itemÛw (id, dmg, def, masz, nosisz)
-	item niewykonczony_m("NiewykoÒczony Miecz"			, 1 , 20 , 0 , 1, 0);
-	item cwiekowana_m	("∆wiekowana Maczuga"			, 2 , 25 , 0 , 0, 0);
-	item morgensztern	("Morgensztern"					, 3 , 35 , 0 , 0, 0);
-	item dlugi_m		("D≥ugi Miecz"					, 4 , 40 , 0 , 0, 0);
-	item miecz_n		("Miecz Nienawiúci"				, 5 , 44 , 0 , 0, 0);
-	item gruchotacz		("Gruchotacz"					, 6 , 53 , 0 , 0, 0);
-	item zardzewialy_m	("Zardzewia≥y Miecz OburÍczny"	, 7 , 61 , 0 , 0, 0);
-	item dwureczniak	("DwurÍczniak"					, 8 , 81 , 0 , 0, 0);
-	item topor_w		("TopÛr Wojenny"				, 9 , 94 , 0 , 0, 0);
-	item gniew_i		("Gniew Innosa"					, 10, 110, 0 , 0, 0);
-	item uriziel		("Uriziel"						, 11, 150, 0 , 0, 0);
-	item spodnie_k		("Spodnie Kopacza"				, 12, 0  , 15, 1, 0);
-	item stroj_c		("StrÛj Cienia"					, 13, 0  , 30, 1, 0);
-	item zbroja_s		("Zbroja Straønika"				, 14, 0  , 55, 0, 0);
-	item ciezka_z		("CiÍøka Zbroja Straønika"		, 15, 0  , 70, 0, 0);
-	item zbroja_p		("Zbroja z Pancerzy Pe≥zaczy"	, 16, 0  , 80, 0, 0);
-	item starozytna_z	("Staroøytna Zbroja Magiczna"	, 17, 0  , 95, 0, 0);
-																					//wskaüniki do itemÛw	
+	setlocale(LC_ALL, "polish");								//polskie znaki
+	srand(time(NULL));									//liczby pseudolosowe
+	item stary_m		("Stary Miecz"			, 18, 12 , 0 , 1, 0);		//zbi√≥r item√≥w (id, dmg, def, masz, nosisz)
+	item niewykonczony_m	("Niewyko≈Ñczony Miecz"		, 1 , 20 , 0 , 1, 0);
+	item cwiekowana_m	("ƒÜwiekowana Maczuga"		, 2 , 25 , 0 , 0, 0);
+	item morgensztern	("Morgensztern"			, 3 , 35 , 0 , 0, 0);
+	item dlugi_m		("D≈Çugi Miecz"			, 4 , 40 , 0 , 0, 0);
+	item miecz_n		("Miecz Nienawi≈õci"		, 5 , 44 , 0 , 0, 0);
+	item gruchotacz		("Gruchotacz"			, 6 , 53 , 0 , 0, 0);
+	item zardzewialy_m	("Zardzewia≈Çy Miecz Oburƒôczny"	, 7 , 61 , 0 , 0, 0);
+	item dwureczniak	("Dwurƒôczniak"			, 8 , 81 , 0 , 0, 0);
+	item topor_w		("Top√≥r Wojenny"		, 9 , 94 , 0 , 0, 0);
+	item gniew_i		("Gniew Innosa"			, 10, 110, 0 , 0, 0);
+	item uriziel		("Uriziel"			, 11, 150, 0 , 0, 0);
+	item spodnie_k		("Spodnie Kopacza"		, 12, 0  , 15, 1, 0);
+	item stroj_c		("Str√≥j Cienia"			, 13, 0  , 30, 1, 0);
+	item zbroja_s		("Zbroja Stra≈ºnika"		, 14, 0  , 55, 0, 0);
+	item ciezka_z		("Ciƒô≈ºka Zbroja Stra≈ºnika"	, 15, 0  , 70, 0, 0);
+	item zbroja_p		("Zbroja z Pancerzy Pe≈Çzaczy"	, 16, 0  , 80, 0, 0);
+	item starozytna_z	("Staro≈ºytna Zbroja Magiczna"	, 17, 0  , 95, 0, 0);
+												//wska≈∫niki do item√≥w	
 	wstary_m = &stary_m;
 	wniewykonczony_m = &niewykonczony_m;
 	wcwiekowana_m = &cwiekowana_m;
@@ -55,21 +55,21 @@ int main()
 	wzbroja_p = &zbroja_p;
 	wstarozytna_z = &starozytna_z;
 
-	postac ja			("Ja"				, 40 , 10 , 0  , 0  , 0, 250, 0, 0);	//zbiÛr postaci (hp, dmg, def, exp, exp do lvl, id bron, id pancerz)
-	postac scierwojad	("åcierwojad"		, 40 , 8  , 9  , 50 , 0, 0, 0, 0);
-	postac goblin1		("Goblin"			, 40 , 25 , 15 , 60 , 0, 0, 0, 0);
+	postac ja		("Ja"			, 40 , 10 , 0  , 0  , 0, 250, 0, 0);	//zbi√≥r postaci (hp, dmg, def, exp, exp do lvl, id bron, id pancerz)
+	postac scierwojad	("≈öcierwojad"		, 40 , 8  , 9  , 50 , 0, 0, 0, 0);
+	postac goblin1		("Goblin"		, 40 , 25 , 15 , 60 , 0, 0, 0, 0);
 	postac krwiopijca	("Krwiopijca"		, 50 , 30 , 15 , 70 , 0, 0, 0, 0);
-	postac wilk 		("Wilk"				, 80 , 40 , 20 , 90 , 0, 0, 0, 0);
+	postac wilk 		("Wilk"			, 80 , 40 , 20 , 90 , 0, 0, 0, 0);
 	postac goblin2		("Czarny Goblin"	, 80 , 55 , 40 , 120, 0, 0, 0, 0);
-	postac topielec		("Topielec"			, 90 , 50 , 50 , 170, 0, 0, 0, 0);
-	postac pelzacz		("Pe≥zacz"			, 90 , 65 , 55 , 130, 0, 0, 0, 0);
-	postac zebacz		("ZÍbacz"			, 160, 80 , 40 , 220, 0, 0, 0, 0);
-	postac cieniostwor	("CieniostwÛr"		, 200, 110, 100, 400, 0, 0, 0, 0);
-	postac ork1			("Ork Zwiadowca"	, 200, 30 , 50 , 180, 0, 0, 0, 0);
-	postac ork2			("Ork Wojownik"		, 210, 55 , 60 , 250, 0, 0, 0, 0);
-	postac szkielet		("Szkielet Wojownik", 300, 130, 50 , 300, 0, 0, 0, 0);
-	postac gomez		("Gomez"			, 160, 50 , 55 , 999, 99, 0, 0, 0);
-																					//wskaüniki do postaci
+	postac topielec		("Topielec"		, 90 , 50 , 50 , 170, 0, 0, 0, 0);
+	postac pelzacz		("Pe≈Çzacz"		, 90 , 65 , 55 , 130, 0, 0, 0, 0);
+	postac zebacz		("Zƒôbacz"		, 160, 80 , 40 , 220, 0, 0, 0, 0);
+	postac cieniostwor	("Cieniostw√≥r"		, 200, 110, 100, 400, 0, 0, 0, 0);
+	postac ork1		("Ork Zwiadowca"	, 200, 30 , 50 , 180, 0, 0, 0, 0);
+	postac ork2		("Ork Wojownik"		, 210, 55 , 60 , 250, 0, 0, 0, 0);
+	postac szkielet		("Szkielet Wojownik"	, 300, 130, 50 , 300, 0, 0, 0, 0);
+	postac gomez		("Gomez"		, 160, 50 , 55 , 999, 99, 0, 0, 0);
+												//wska≈∫niki do postaci
 	wja = &ja;
 	wscierwojad = &scierwojad;
 	wgoblin1 = &goblin1;
@@ -85,15 +85,15 @@ int main()
 	wszkielet = &szkielet;
 	wgomez = &gomez;
 	
-	dialog gomez1("Z Y'Berionem\n", 0);												//zbiÛr dialogÛw (dot. rozmowy z Gomezem)
+	dialog gomez1("Z Y'Berionem\n", 0);							//zbi√≥r dialog√≥w (dot. rozmowy z Gomezem)
 	wgomez1 = &gomez1;																
-	dialog gomez2("Z Cor Calomem\n", 0);											//tekst, czy kwestia zosta≥a powiedziana
+	dialog gomez2("Z Cor Calomem\n", 0);							//tekst, czy kwestia zosta≈Ça powiedziana
 	wgomez2 = &gomez2;
 	dialog gomez3("Z Lee\n", 0);
 	wgomez3 = &gomez3;
 	dialog gomez4("Z Laresem\n", 0);
 	wgomez4 = &gomez4;
-	dialog gomez5("To juø wszyscy, z tych waøniejszych\n", 0);
+	dialog gomez5("To ju≈º wszyscy, z tych wa≈ºniejszych\n", 0);
 	wgomez5 = &gomez5;
 	start();
 	cin.ignore();
