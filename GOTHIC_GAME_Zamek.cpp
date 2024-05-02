@@ -16,15 +16,15 @@ int zaloz_bron(item *eq);
 
 int zamek()
 {
-	if(zrobione && nek == 2 && zadlo == 4)																			//jeúli zrobione questy
+	if(zrobione && nek == 2 && zadlo == 4)											//je≈õli zrobione questy
 	{
-		cout<<"Ty: PrzychodzÍ zaoferowaÊ swoje us≥ugi"<<endl;
+		cout<<"Ty: Przychodzƒô zaoferowaƒá swoje us≈Çugi"<<endl;
 		cin.ignore(); cin.ignore();
-		cout<<"Gomez: A dlaczego myúlisz, øe potrzebujÍ twoich us≥ug?"<<endl;
+		cout<<"Gomez: A dlaczego my≈õlisz, ≈ºe potrzebujƒô twoich us≈Çug?"<<endl;
 		cin.ignore();
-		cout<<"Ty: Przemierzy≥em sporπ czÍúÊ kolonii i mam kontakty we wszystkich obozach"<<endl;
+		cout<<"Ty: Przemierzy≈Çem sporƒÖ czƒô≈õƒá kolonii i mam kontakty we wszystkich obozach"<<endl;
 		cin.ignore(); 
-		cout<<"Gomez: No! To siÍ moøe przydaÊ. Z kim konkretnie utrzymujesz kontakty?"<<endl;
+		cout<<"Gomez: No! To siƒô mo≈ºe przydaƒá. Z kim konkretnie utrzymujesz kontakty?"<<endl;
 		cin.ignore(); 
 		do																											//opcje dialogowe z gomezem
 		{
@@ -48,7 +48,7 @@ int zamek()
 				switch(decyzja)
 				{
 					case(1):
-						cout<<"Z twoich k≥amstw wnoszÍ, øe masz mnie za idiotÍ!"<<endl;
+						cout<<"Z twoich k≈Çamstw wnoszƒô, ≈ºe masz mnie za idiotƒô!"<<endl;
 						zrobione = 0;
 						mech(wja, wgomez, 1);
 						break;
@@ -83,14 +83,14 @@ int zamek()
 						{
 						if(dobrze == 3)
 						{
-							cout<<"Nieüle... jak na øÛ≥todzioba\nMoøesz dla mnie pracowaÊ"<<endl;
+							cout<<"Nie≈∫le... jak na ≈º√≥≈Çtodzioba\nMo≈ºesz dla mnie pracowaƒá"<<endl;
 							cin.ignore(); cin.ignore();
 							zaloz_pancerz(wstroj_c);
 							koniec = 2;
 						}
 						else
 						{
-							cout<<"I co? Mam byÊ pod wraøeniem?! Znam Kopaczy, ktÛrzy majπ lepsze kontakty od ciebie!"<<endl;
+							cout<<"I co? Mam byƒá pod wra≈ºeniem?! Znam Kopaczy, kt√≥rzy majƒÖ lepsze kontakty od ciebie!"<<endl;
 							zrobione = 0;
 							mech(wja,wgomez, 1);
 						}
@@ -104,11 +104,11 @@ int zamek()
 		}
 		while(koniec == 0);
 	}	
-	else																											//jeøeli questy nie zrobione
+	else																											//je≈ºeli questy nie zrobione
 	{
-		cout<<"*Przebiegasz bokiem przez straønikÛw Zamku z mieczem w rÍku*"<<endl;
+		cout<<"*Przebiegasz bokiem przez stra≈ºnik√≥w Zamku z mieczem w rƒôku*"<<endl;
 		cin.ignore(); cin.ignore();
-		cout<<"Gomez: åmiesz tak po prostu tutaj wmaszerowaÊ i zawracaÊ mi g≥owÍ? Ty gnido! STRAØ!"<<endl;
+		cout<<"Gomez: ≈ömiesz tak po prostu tutaj wmaszerowaƒá i zawracaƒá mi g≈Çowƒô? Ty gnido! STRA≈ª!"<<endl;
 		PlaySound("DIA_GOMEZ_FAULT_11_01.wav",NULL, SND_FILENAME | SND_NOSTOP);
 		cout<<"------------------"<<endl;
 		mech(wja, wgomez, 1);
