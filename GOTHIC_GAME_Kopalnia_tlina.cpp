@@ -11,34 +11,34 @@ int zaloz_bron(item *eq);
 int kopalnia()
 {
 	
-	cout<<"Wszedleú na teren Opuszczonej Kopalni"<<endl
+	cout<<"Wszedle≈õ na teren Opuszczonej Kopalni"<<endl
 		<<"------------------"<<endl;
 	cin.ignore(); cin.ignore();
-		if(loot == 0)																//znalezienie miecza
+		if(loot == 0)												//znalezienie miecza
 	{
 		loot++;
-		cout<<"Aha, chyba coú znalaz≥em"<<endl
-			<<"*Podnios≥eú "<<wstary_m->nazwa<<"*"<<endl;
+		cout<<"Aha, chyba co≈õ znalaz≈Çem"<<endl
+			<<"*Podnios≈Çe≈õ "<<wstary_m->nazwa<<"*"<<endl;
 		zaloz_bron(wstary_m);
 	}
-	mech(wja, wscierwojad);															//przeciwnicy
+	mech(wja, wscierwojad);												//przeciwnicy
 	mech(wja, wscierwojad);
 	mech(wja, wgoblin1);
-	cout<<"Wyczyúci≥eú spota"<<endl
+	cout<<"Wyczy≈õci≈Çe≈õ spota"<<endl
 		<<"------------------"<<endl;
 	cin.ignore();
 }
 int kotlina()
 {
-	cout<<"Wszed≥eú do Kotliny niedaleko Starego Obozu"<<endl
+	cout<<"Wszed≈Çe≈õ do Kotliny niedaleko Starego Obozu"<<endl
 		<<"---------------------------------------------"<<endl;
 	cin.ignore(); cin.ignore();
-	mech(wja, wscierwojad);															//przeciwnicy
+	mech(wja, wscierwojad);												//przeciwnicy
 	mech(wja, wgoblin1);
 	mech(wja, wgoblin1);
-	if(nek==0)																		//quest - nek->z≥y
+	if(nek==0)													//quest - nek->z≈Çy
 	{
-		cout<<"*Skanujπc obszar znalaz≥eú wejúcie do jaskinii*"<<endl
+		cout<<"*SkanujƒÖc obszar znalaz≈Çe≈õ wej≈õcie do jaskinii*"<<endl
 			<<"Wchodzisz? (0-1)"<<endl
 			<<"------------------------------------------------------------"<<endl;
 		bool decyzja;
@@ -50,12 +50,12 @@ int kotlina()
 			mech(wja, wgoblin1, 1);
 			mech(wja, wgoblin1, 1);
 			mech(wja, wgoblin1, 1);
-			cout<<"W g≥Íbi jaskinii leøy Martwy Straønik"<<endl;
+			cout<<"W g≈Çƒôbi jaskinii le≈ºy Martwy Stra≈ºnik"<<endl;
 			cin.ignore();
-			cout<<"*Przeszukujesz cia≥o*";
+			cout<<"*Przeszukujesz cia≈Ço*";
 			cin.ignore();
-			cout<<"Aha, chyba coú znalaz≥em"<<endl
-				<<"*Podnios≥eú "<<wniewykonczony_m->nazwa<<"*"<<endl;
+			cout<<"Aha, chyba co≈õ znalaz≈Çem"<<endl
+				<<"*Podnios≈Çe≈õ "<<wniewykonczony_m->nazwa<<"*"<<endl;
 			zaloz_bron(wniewykonczony_m);
 			cout<<"*Rabujesz amulet z napisem NEK*"<<endl;
 			cin.ignore();
